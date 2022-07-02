@@ -1,23 +1,42 @@
-import { BsPersonCircle }from 'react-icons/bs'
 import TextField from '@mui/material/TextField';
+import { AiOutlineLogin } from "react-icons/ai";
+import Button from '@mui/material/Button';
 import ReactDOM from 'react-dom';
 import './styles/login.css'
-import '../index.css'
 
 function Login(){
     return (
-        <div className="containerLogin">
-         	<div className="">
-            {/*    <BsPersonCircle /> */}
-                <TextField className="text-3xl font-bold text-white" id="outlined-basic" label="E-mail" variant="outlined" />
-            </div>
-            
-			<div className="">
-            {/*    <BsPersonCircle /> */}
-                <TextField className="text-3xl font-bold text-white" id="outlined-basic" label="E-mail" variant="outlined" />
-            </div>
-            <h2 className="text-white">Ola</h2>
-            
+        <div className="containerLogin flex justify-center flex-wrap">
+
+        	<div className="w-[100%] flex flex-row mb-3.5 text-5xl text-sky-500">
+        	<AiOutlineLogin />
+	        	<h1>Login</h1>
+	        </div>
+
+        	<div className="w-[100%] flex flex-row justify-evenly">
+	         	<div className="w-[48%]">
+	         		<TextField
+			          required
+			          id="outlined"
+			          label="E-mail"
+			          placeholder="exemple@gmail.com"
+			          className="w-[100%]"
+			        />
+	         	</div>
+
+	         	<div className="w-[48%]">
+	         		<TextField
+			          required
+			          id="outlined"
+			          label="Password"
+			          placeholder="password"
+			          className="w-[100%]"
+			        />
+	         	</div>
+	         </div>
+	         <div className="w-[100%] flex justify-center align-center mt-5">
+	         	<Button variant="contained">Login</Button>
+	         </div>
 
         </div>
     )
