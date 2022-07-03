@@ -15,3 +15,27 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+.lineLogin{
+  width: 250px;
+  height: 250px;
+  transition: width 2s linear 1s;
+  transform: rotate(45deg);
+  transform-origin: left top;
+  transition-duration: 8s;
+  animation: containerBlack 8s infinite;
+}
+@keyframes containerBlack {
+  0%{
+    top: 60%;
+  }
+  50% {
+    background: transparent;
+   top: 40%; 
+  }
+
+  100%{
+    top: 60%;
+  }
+  
+}

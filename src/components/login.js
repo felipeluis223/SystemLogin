@@ -6,7 +6,7 @@ import './styles/login.css'
 
 function Login(){
     return (
-        <div className="containerLogin flex justify-center flex-wrap">
+        <div className="containerLogin flex justify-center flex-wrap absolute">
 
         	<div className="w-[100%] flex flex-row mb-3.5 text-5xl text-sky-500">
         	<AiOutlineLogin />
